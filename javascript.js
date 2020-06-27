@@ -15,6 +15,14 @@ var books = [
   }
 ]
 
+let new_book_btn = document.getElementById('new-book-btn')
+let book_display = document.getElementById("bookDisplay")
+
+new_book_btn.addEventListener("click", (e) => {
+	let randBookInd = Math.floor(Math.random() * books.length);
+    book_display.innerHTML = books[randBookInd].title;
+});
+
 function newBook() {
 	var randomBook = Math.floor(Math.random() * books.length);
 	document.getElementById("bookDisplay").innerHTML = books[randomBook];
