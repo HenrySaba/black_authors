@@ -20,5 +20,10 @@ let book_display = document.getElementById("bookDisplay")
 
 new_book_btn.addEventListener("click", (e) => {
 	let randBookInd = Math.floor(Math.random() * books.length);
-    book_display.innerHTML = books[randBookInd].title;
+    let newBook = books[randBookInd];
+    newBook.innerHTML = newBook.title;
+    
+    let newImg = document.createElement("img");
+    newImg.setAttribute("src", newBook.image_url);
+    book_display.appendChild(newImg)
 });
