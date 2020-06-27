@@ -22,8 +22,3 @@ new_book_btn.addEventListener("click", (e) => {
 	let randBookInd = Math.floor(Math.random() * books.length);
     book_display.innerHTML = books[randBookInd].title;
 });
-
-function newBook() {
-	var randomBook = Math.floor(Math.random() * books.length);
-	document.getElementById("bookDisplay").innerHTML = books[randomBook];
-}
