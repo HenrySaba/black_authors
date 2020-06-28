@@ -15,15 +15,20 @@ var books = [
   }
 ]
 
-let new_book_btn = document.getElementById('new-book-btn')
-let book_display = document.getElementById("bookDisplay")
+let new_book_btn = document.getElementById('new-book-btn');
+let book_display = document.getElementById("bookDisplay");
+let img_created = false;
 
 new_book_btn.addEventListener("click", (e) => {
 	let randBookInd = Math.floor(Math.random() * books.length);
     let newBook = books[randBookInd];
     newBook.innerHTML = newBook.title;
     
-    let newImg = document.createElement("img");
-    newImg.setAttribute("src", newBook.image_url);
-    book_display.appendChild(newImg)
+    if (!img_created) {
+	    let newImg = document.createElement("img");
+	    newImg.setAttribute("src", newBook.image_url);
+	    newImg.setAttribute("height", "200px");
+	    book_display.appendChild(newImg);
+	    img_created = true;
+    }
 });
