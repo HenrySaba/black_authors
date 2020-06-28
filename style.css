@@ -1,3 +1,7 @@
+h1 {
+	text-align: center;
+}
+
 #new-book-btn {
 	position: absolute;
 	bottom: 10%;
