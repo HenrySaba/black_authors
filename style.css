@@ -1,5 +1,17 @@
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+	margin: 10px;
+}
+
+.link-container {
+	text-align: center;
+}
+
+a {
+	background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
 }
 
 #new-book-btn {
