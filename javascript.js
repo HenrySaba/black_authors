@@ -72,7 +72,7 @@ var books = [
 ]
 
 
-let new_book_btn = document.getElementById('new-book-btn');
+let new_book_btn = document.getElementById('new-book-btn')
 let book_display = document.getElementById("bookDisplay");
 let img_created = false;
 let newImg = document.getElementById("bookImg");
@@ -85,3 +85,5 @@ new_book_btn.addEventListener("click", (e) => {
     newImg.setAttribute("src", newBook.image_url);
     newImg.setAttribute("class", "book-img");
 });
+
+new_book_btn.click()
