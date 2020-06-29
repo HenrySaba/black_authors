@@ -83,11 +83,7 @@ new_book_btn.addEventListener("click", (e) => {
     newBook.innerHTML = newBook.title;
     
     newImg.setAttribute("src", newBook.image_url);
-    // newImg.setAttribute("height", "30%");
-    newImg.setAttribute("width", "30%");
-    newImg.setAttribute("display", "block");
-    newImg.setAttribute("margin-left", "auto");
-    newImg.setAttribute("margin-right", "auto");
+    newImg.setAttribute("class", "book-img");
     if (!img_created) {
     	book_display.appendChild(newImg);
     	img_created = true;

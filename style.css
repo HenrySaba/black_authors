@@ -3,7 +3,19 @@ h1 {
 }
 
 #new-book-btn {
-	position: absolute;
-	bottom: 10%;
-	left: 50%;
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+	bottom: 20%;
+}
+
+.book-display {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.book-img {
+	width: 100%;
+	height: 50%;
 }
