@@ -22,6 +22,17 @@ var books = [
       'Between the World and Me is Ta-Nehisi Coates’s attempt to answer these questions in a letter to his adolescent son. Coates shares with his son—and readers—the story of his awakening to the truth about his place in the world through a series of revelatory experiences, from Howard University to Civil War battlefields, from the South Side of Chicago to Paris, from his childhood home to the living rooms of mothers whose children’s lives were taken as American plunder. Beautifully woven from personal narrative, reimagined history, and fresh, emotionally charged reportage, Between the World and Me clearly illuminates the past, bracingly confronts our present, and offers a transcendent vision for a way forward.',
     purchase_url: 'https://www.amazon.com/dp/0812993543/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1',
     image_url: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1549482990-51ndtpPOGTL.jpg?crop=1xw:1xh;center,top&resize=768:*'
+  },
+  {
+    title: 'We Should All Be Feminists',
+    author: 'Chimamanda Ngozi Adichie',
+    description: 'What does “feminism” mean today? That is the question at the heart of We Should All Be Feminists, a personal, eloquently-argued essay—adapted from her much-viewed TEDx talk of the same name—by Chimamanda Ngozi Adichie, the award-winning author of Americanah and Half of a Yellow Sun. \n' +
+      '\n' +
+      'With humor and levity, here Adichie offers readers a unique definition of feminism for the twenty-first century—one rooted in inclusion and awareness. She shines a light not only on blatant discrimination, but also the more insidious, institutional behaviors that marginalize women around the world, in order to help readers of all walks of life better understand the often masked realities of sexual politics. Throughout, she draws extensively on her own experiences—in the U.S., in her native Nigeria, and abroad—offering an artfully nuanced explanation of why the gender divide is harmful for women and men, alike. \n' +
+      '\n' +
+      'Argued in the same observant, witty and clever prose that has made Adichie a bestselling novelist, here is one remarkable author’s exploration of what it means to be a woman today—and an of-the-moment rallying cry for why we should all be feminists.',
+    purchase_url: 'https://www.amazon.com/We-Should-All-Be-Feminists/dp/110191176X/ref=sr_1_1?crid=2A2J97JC77LH3&dchild=1&keywords=we+should+all+be+feminists+chimamanda+ngozi+adichie&qid=1593461491&sprefix=we+should+all+be+femin%2Caps%2C156&sr=8-1',
+    image_url: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1549483007-51L9u20bC7L.jpg?crop=0.952xw:1xh;center,top&resize=768:*'
   }
 ]
 
@@ -37,12 +48,11 @@ new_book_btn.addEventListener("click", (e) => {
     newBook.innerHTML = newBook.title;
     
     newImg.setAttribute("src", newBook.image_url);
-    newImg.setAttribute("height", "30%");
+    // newImg.setAttribute("height", "30%");
     newImg.setAttribute("width", "30%");
     newImg.setAttribute("display", "block");
-    newImg.setAttribute("margin", "0 auto");
-    // newImg.setAttribute("left", "50%");
-    // newImg.setAttribute("right", "50%");
+    newImg.setAttribute("margin-left", "auto");
+    newImg.setAttribute("margin-right", "auto");
     if (!img_created) {
     	book_display.appendChild(newImg);
     	img_created = true;
