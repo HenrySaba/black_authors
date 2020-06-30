@@ -9,7 +9,7 @@ var books = [
       'As Queenie careens from one questionable decision to another, she finds herself wondering, “What are you doing? Why are you doing it? Who do you want to be?”—all of the questions today’s woman must face in a world trying to answer them for her.\n' +
       '\n' +
       'With “fresh and honest” (Jojo Moyes) prose, Queenie is a remarkably relatable exploration of what it means to be a modern woman searching for meaning in today’s world.',
-    purchase_url: 'https://www.amazon.com/Queenie-Candice-Carty-Williams/dp/1501196022/ref=sr_1_1?dchild=1&gclid=CjwKCAjw_-D3BRBIEiwAjVMy7GP9EKHtRMOXAoFzDWRQs_lP-Woi8Hf3R2-8X1w3h4GJyj2xImxs7xoCn6QQAvD_BwE&hvadid=410093345423&hvdev=c&hvlocphy=9027257&hvnetw=g&hvqmt=b&hvrand=6878993641724397513&hvtargid=kwd-400107386394&hydadcr=9992_11546540&keywords=queenie+novel&qid=1593386407&sr=8-1&tag=googhydr-20',
+    purchase_url: 'https://tinyurl.com/yd2lfkxp',
     image_url: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1580245350-51KGeS2os3L.jpg?crop=1.00xw:0.968xh;0,0.0140xh&resize=768:*'
   },
   {
