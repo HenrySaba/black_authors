@@ -1,8 +1,9 @@
 body {
-	background-color: #807387;
+	background-color: #212121;
 }
 
 h1, h2, h3, h4, h5, h6 {
+	color: white;
 	text-align: center;
 	margin: 10px;
 }
@@ -12,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	background: black;
     color: white;
     display: inline-block;
     padding: 10px;
