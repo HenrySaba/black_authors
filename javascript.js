@@ -87,7 +87,7 @@ new_book_btn.addEventListener("click", (e) => {
     let newBook = books[randBookInd];
     
     newImg.setAttribute("src", newBook.image_url);
-    newImg.setAttribute("class", "book-img");
+    newImg.setAttribute("class", "book-img animated fadeIn");
 
  //    bookTitle.innerHTML = newBook.title;
 	// bookAuthor.innerHTML = newBook.author;
