@@ -45,6 +45,10 @@ a {
 	margin: 100px auto;
 }
 
+#book-title, #book-author, #book-description {
+	text-decoration: underline;
+	color: #212121;
+}
 
 .flip-card-container {
 	width: 500px;
@@ -91,8 +95,9 @@ a {
 	grid-template-rows: 1fr 1fr 1fr;
 	overflow-y: scroll;
 
-	background-color: #517fa4;
-	color: #fff;
+	background-color: #fff;
+	color: #212121;
+	text-align: center;
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
 }

@@ -74,9 +74,9 @@ var books = [
 
 let new_book_btn = document.getElementById('new-book-btn')
 let book_display = document.getElementById("bookDisplay");
-let bookTitle = document.getElementById("book-title");
-let bookAuthor = document.getElementById("book-author");
-let bookDescription = document.getElementById("book-description");
+let bookTitle = document.getElementById("book-title-txt");
+let bookAuthor = document.getElementById("book-author-txt");
+let bookDescription = document.getElementById("book-description-txt");
 let bookPurchaseLink = document.getElementById("purchase-link");
 
 let img_created = false;
