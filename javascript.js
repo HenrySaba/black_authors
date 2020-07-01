@@ -89,10 +89,10 @@ new_book_btn.addEventListener("click", (e) => {
     newImg.setAttribute("src", newBook.image_url);
     newImg.setAttribute("class", "book-img");
 
- //    bookTitle.innerHTML = newBook.title;
-	// bookAuthor.innerHTML = newBook.author;
-	// bookDescription.innerHTML = newBook.description;
-	bookPurchaseLink.setAttribute("href", newBook.purchase_url);
+    bookTitle.innerHTML = newBook.title;
+    bookAuthor.innerHTML = newBook.author;
+    bookDescription.innerHTML = newBook.description;
+    bookPurchaseLink.setAttribute("href", newBook.purchase_url);
 });
 
 new_book_btn.click()
