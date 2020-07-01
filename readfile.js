@@ -8,12 +8,13 @@ fs.createReadStream(inputFilePath)
 .pipe(csv())
 .on('data', function(data){
     try {
-        books.push(data)
+    	data.description = data.description.replace("\"", "'\"'")
+        books.push(data);
     }
     catch(err) {
         //error handler
     }
 })
 .on('end',function(){
-    console.log(books)
+    console.log(books);
 });
