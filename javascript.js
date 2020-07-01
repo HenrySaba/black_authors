@@ -80,14 +80,14 @@ let bookDescription = document.getElementById("book-description");
 let bookPurchaseLink = document.getElementById("purchase-link");
 
 let img_created = false;
-let newImg = document.getElementById("bookImg");
+let newImg = document.getElementById("book-img");
 
 new_book_btn.addEventListener("click", (e) => {
 	let randBookInd = Math.floor(Math.random() * books.length);
     let newBook = books[randBookInd];
     
     newImg.setAttribute("src", newBook.image_url);
-    newImg.setAttribute("class", "book-img animated fadeIn");
+    newImg.setAttribute("class", "book-img");
 
  //    bookTitle.innerHTML = newBook.title;
 	// bookAuthor.innerHTML = newBook.author;

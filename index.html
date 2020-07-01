@@ -21,8 +21,19 @@
 			<button id="new-book-btn">New Book</button>
 		</div>
 		<div>
-			<img class="book-img animated fadeIn" id='bookImg'>
-			<div class="link-container animated fadeIn delay-1s" id="book-purchase-link">
+			<!-- <img class="book-img animated fadeIn" id='bookImg'> -->
+			<div class="flip-card-container">
+				<div class="flip-card">
+					<div class="flip-card-front">
+						<img class="book-img" id="book-img">
+					</div>
+					<div class="flip-card-back">
+						Back
+					</div>
+				</div>
+			</div>
+
+			<div class="link-container" id="book-purchase-link">
 				<a id="purchase-link" target="_blank" href="">Purchase Link</a>
 			</div>
 		</div>
