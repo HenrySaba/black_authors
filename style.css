@@ -77,14 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .flip-card {
 	height: 100%;
-	transform-style: preserve-3d;
-	transition: transform 1s;
 	-webkit-transition: -webkit-transform 1s;
-}
-
-.flip-card-container:hover .flip-card {
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -105,18 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 .flip-card-front {
 	background-color: #333;
 	color: #fff;
-}
-
-.flip-card-back {
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	overflow-y: scroll;
-
-	background-color: #fff;
-	color: #212121;
-	text-align: center;
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
 }
 
 .purchase-img {
