@@ -7,12 +7,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
 	.body-grid-container {
-		display: block;
+		display: grid;
+		grid-template-rows: 35% 1fr;
 	}
 }
 
@@ -23,25 +23,17 @@ h1, h2, h3, h4, h5, h6 {
 .top-header {
 	background-color: #424242;
 	font-family: 'Staatliches';
-	padding: 50px 0;
-	font-size: 50px;
+	padding: 20px 0;
+	font-size: 40px;
 	text-align: center;
 }
 
 .body-left {
-	border-style: dotted;
-	border-color: white;
 	margin-right: 10%;
-}
-
-.body-right {
-	border-style: dotted;
-	border-color: white;
 }
 
 .description {
 	width: 400px;
-
 	font-size: 20px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	margin: 0 auto;
@@ -77,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flip-card-container {
-	width: 400px;
-	height: 500px;
+	width: 350px;
+	height: 450px;
 	perspective: 1000px;
 	margin: 0 auto;
 }
