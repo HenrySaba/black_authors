@@ -5,8 +5,9 @@ body {
 
 .body-grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-	grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+/*grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+*/	grid-gap: 10px;
 	margin: 30px;
 }
 
@@ -17,29 +18,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-header {
 	background-color: #424242;
-	font-family: 'Staatliches', cursive;
+	font-family: 'Staatliches';
 	padding: 50px 0;
 	font-size: 50px;
 }
 
 .body-left {
-	margin-top: 30px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	/*width: 300px;*/
 	border-style: dotted;
 	border-color: white;
 }
 
 .body-right {
-	margin: 0 auto;
-	border-style: dotted;
+/*	margin: 0 auto;
+*/	border-style: dotted;
 	border-color: white;
 }
 
 .description {
+	width: 300px;
+	height: 500px;
 	font-size: 20px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-
+	margin: 0 auto;
 }
 
 .link-container {
@@ -68,16 +70,14 @@ a {
 }
 
 .flip-card-container {
-	width: 500px;
+	width: 300px;
 	height: 500px;
 	perspective: 1000px;
-
+	margin: 0 auto;
 }
 
 .flip-card {
-	width: 70%;
 	height: 100%;
-	margin-left: 30%;
 	transform-style: preserve-3d;
 	transition: transform 1s;
 	-webkit-transition: -webkit-transform 1s;
