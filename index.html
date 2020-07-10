@@ -15,7 +15,9 @@
 			<h4 class='description'>
 				Black authors make roughly 4x less revenue from book sales than white authors. This disparity is shocking, and it is important to support the wonderful writings of black writers.<br><br>Hover over the book on the right for more information on it.<br><br>Press the button below to generate a new recommendation.
 			</h4>
-			<button id="new-book-btn">New Book</button>
+			<div class="new-book-btn-container">
+				<button id="new-book-btn">New Book</button>
+			</div>
 		</div>
 		<div class='body-right'>
 			<!-- <img class="book-img animated fadeIn" id='bookImg'> -->
@@ -37,10 +39,16 @@
 
 			<div class="link-container" id="book-purchase-link">
 				<a id="purchase-link" target="_blank" href="">
-					<img src="assets/buy-on-amazon.png" target="_blank" href=""></img>
+					<img class="purchase-img" src="assets/buy-on-amazon.png" target="_blank"></img>
 				</a>
 			</div>
 		</div>
+	</div>
+	<div class="footer">
+		<span class="donate-text">Click here to donate to </span>
+		<a id="donate-link" target="_blank" href="">
+			<img class="blm-logo-img" src="assets/blm-logo.png" target="_blank"></img>
+		</a>
 	</div>
 	<script src="javascript.js"></script>
 </body>

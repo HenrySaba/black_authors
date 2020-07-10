@@ -4,11 +4,16 @@ body {
 }
 
 .body-grid-container {
-	display: grid;
-  	grid-template-columns: 1fr 1fr;
-/*grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
-*/	grid-gap: 10px;
-	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	.body-grid-container {
+		display: block;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,15 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .body-left {
-	/*margin: 0 auto;*/
-	/*width: 300px;*/
 	border-style: dotted;
 	border-color: white;
+	margin-right: 10%;
 }
 
 .body-right {
-/*	margin: 0 auto;
-*/	border-style: dotted;
+	border-style: dotted;
 	border-color: white;
 }
 
@@ -48,15 +51,16 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-
+.new-book-btn-container {
+	text-align: center;
+}
 
 #new-book-btn {
 	width: 300px;
-    margin-left: 23%;
-    padding: 30px 50px;
+    padding: 30px 60px;
     border-radius: 10px;
-    margin-top: 50px;
-    font-size: 35px;
+    margin: 50px 0;
+    font-size: 36px;
     background-color: #fff;
     font-family: 'Staatliches';
     cursor: pointer;
@@ -121,4 +125,31 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
+}
+
+.purchase-img {
+	width: 150px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.footer {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D8D8D8;
+	padding: 10px;
+}
+
+.donate-text {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-right: 10px;
+}
+
+.blm-logo-img {
+	width: 200px;
 }
