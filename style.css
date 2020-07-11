@@ -1,12 +1,12 @@
 body {
 	background-color: #212121;
-	margin: 0;
 }
 
 .body-grid-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 30px auto;
 }
 
 @media only screen and (max-width: 900px) {
@@ -59,10 +59,10 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.book-display {
+/*.book-display {
 	position: relative;
 	margin: 30px auto;
-}
+}*/
 
 #book-title, #book-author, #book-description {
 	text-decoration: underline;
