@@ -69,7 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #212121;
 }
 
-.flip-card-container {
+.book-container {
+	border: dashed;
+	border-color: white;
 	width: 450px;
 	height: 600px;
 	margin: 0 auto;
@@ -77,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .flip-card {
 	height: 100%;
-	-webkit-transition: -webkit-transform 1s;
 }
 
 .flip-card-front, .flip-card-back {
