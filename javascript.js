@@ -71,12 +71,7 @@ var books = [
   }
 ]
 
-
 let new_book_btn = document.getElementById('new-book-btn')
-let book_display = document.getElementById("bookDisplay");
-let bookTitle = document.getElementById("book-title-txt");
-let bookAuthor = document.getElementById("book-author-txt");
-let bookDescription = document.getElementById("book-description-txt");
 let bookPurchaseLink = document.getElementById("purchase-link");
 
 let img_created = false;
@@ -88,11 +83,8 @@ new_book_btn.addEventListener("click", (e) => {
     
     newImg.setAttribute("src", newBook.image_url);
     newImg.setAttribute("class", "book-img");
-
-    bookTitle.innerHTML = newBook.title;
-    bookAuthor.innerHTML = newBook.author;
-    bookDescription.innerHTML = newBook.description;
     bookPurchaseLink.setAttribute("href", newBook.purchase_url);
+    console.log(newBook.purchase_url);
 });
 
 new_book_btn.click()

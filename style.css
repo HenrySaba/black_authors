@@ -59,19 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-/*.book-display {
-	position: relative;
-	margin: 30px auto;
-}*/
-
-#book-title, #book-author, #book-description {
-	text-decoration: underline;
-	color: #212121;
-}
-
 .book-container {
-	border: dashed;
-	border-color: white;
 	width: 450px;
 	height: 600px;
 	margin: 0 auto;
