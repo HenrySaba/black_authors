@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .body-left {
-	margin-right: 10%;
+	margin-right: 5%;
 }
 
 .description {
@@ -70,9 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flip-card-container {
-	width: 350px;
-	height: 450px;
-	perspective: 1000px;
+	width: 450px;
+	height: 600px;
 	margin: 0 auto;
 }
 
