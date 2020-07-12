@@ -386,7 +386,6 @@ new_book_btn.addEventListener("click", (e) => {
     newImg.setAttribute("src", newBook.image_url);
     newImg.setAttribute("class", "book-img");
     bookPurchaseLink.setAttribute("href", newBook.purchase_url);
-    console.log(newBook.purchase_url);
 });
 
 new_book_btn.click()
