@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Books by Black Authors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -16,9 +17,6 @@
 			<h4 class='description'>
 				Black authors make roughly 4x less revenue from book sales than white authors. This disparity is shocking, and it is important to support the wonderful writings of black writers.<br><br>Press the button below to generate a new recommendation.
 			</h4>
-			<div class="new-book-btn-container">
-				<button id="new-book-btn">New Book</button>
-			</div>
 		</div>
 		<div class='body-right'>
 			<div class="book-container">
@@ -28,6 +26,9 @@
 			</div>
 
 			<div class="link-container" id="book-purchase-link">
+				<div class="new-book-btn-container">
+					<button id="new-book-btn">New Book</button>
+				</div>
 				<a id="purchase-link" target="_blank" href="">
 					<img class="purchase-img" src="assets/buy-on-amazon.png" target="_blank"></img>
 				</a>
