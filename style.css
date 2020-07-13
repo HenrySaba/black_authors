@@ -6,7 +6,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px auto;
+	margin: 10px auto;
 }
 
 .body-left {
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #new-book-btn {
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     padding: 7px 25px;
     font-size: 28px;
     color: #fff;
@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .book-container {
 	width: 400px;
-	height: 500px;
-	margin: 50px auto;
+	height: 550px;
+	margin: 40px auto 0 auto;
 }
 
 .flip-card {
@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .purchase-img {
 	width: 150px;
 	cursor: pointer;
+	margin: 0 10px;
 }
 
 .footer {
@@ -111,20 +112,25 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 	font-weight: bold;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .blm-logo-img {
 	width: 200px;
+	margin-left: 5px;
 }
 
 .hidden {
 	display: none;
 }
 
-@media only screen and (max-width: 555px) {
+@media only screen and (max-width: 530px) {
 	.body-grid-container {
 		display: grid;
+	}
+
+	.book-container {
+		margin: 20px auto 0 auto;
 	}
 
 	.description {
