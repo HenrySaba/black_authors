@@ -375,17 +375,35 @@ var books = [
 
 let new_book_btn = document.getElementById('new-book-btn')
 let bookPurchaseLink = document.getElementById("purchase-link");
+let nextPageButton = document.getElementById("next-page-btn");
+let header = document.getElementsByClassName("header")[0]
+let bodyLeft = document.getElementsByClassName("body-left")[0]
+let bodyRight = document.getElementsByClassName("body-right")[0]
+let footer = document.getElementsByClassName("footer")[0]
 
-let img_created = false;
 let newImg = document.getElementById("book-img");
 
+nextPageButton.addEventListener("click", (e) => {
+  header.classList.remove("hidden");
+  header.classList.add("animated");
+  header.classList.add("fadeIn");
+  bodyRight.classList.remove("hidden");
+  bodyRight.classList.add("animated");
+  bodyRight.classList.add("fadeIn");
+  footer.classList.remove("hidden");
+  footer.classList.add("animated");
+  footer.classList.add("fadeIn");
+  bodyLeft.classList.add("hidden");
+  nextPageButton.classList.add("hidden");
+})
+
 new_book_btn.addEventListener("click", (e) => {
-	let randBookInd = Math.floor(Math.random() * books.length);
-    let newBook = books[randBookInd];
+  let randBookInd = Math.floor(Math.random() * books.length);
+  let newBook = books[randBookInd];
     
-    newImg.setAttribute("src", newBook.image_url);
-    newImg.setAttribute("class", "book-img");
-    bookPurchaseLink.setAttribute("href", newBook.purchase_url);
+  newImg.setAttribute("src", newBook.image_url);
+  newImg.setAttribute("class", "book-img");
+  bookPurchaseLink.setAttribute("href", newBook.purchase_url);
 });
 
 new_book_btn.click()

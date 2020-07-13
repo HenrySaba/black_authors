@@ -9,58 +9,63 @@ body {
 	margin: 30px auto;
 }
 
+.body-left {
+	margin-top: 15vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 }
 
-.top-header {
+.header {
 	background-color: #424242;
 	font-family: 'Staatliches';
 	padding: 20px 0;
-	font-size: 40px;
+	font-size: 60px;
 	text-align: center;
-}
-
-.body-left {
-	margin-right: 5%;
 }
 
 .description {
-	width: 400px;
-	font-size: 20px;
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	margin: 0 auto;
-	text-align: center;
+	width: 500px;
+	font-size: 50px;
+	font-family: "Staatliches";
+	margin: auto auto;
+}
+
+.fa-arrow-right {
+	color: #fff;
+	font-size: 40px !important;
+	margin-top: 20px;
+	cursor: pointer;
 }
 
 .link-container {
-	margin-top: 10px;
+	margin: 20px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-.new-book-btn-container {
-	text-align: center;
-}
-
 #new-book-btn {
     border-radius: 10px;
     margin: 0 20px;
-    padding: 7px;
+    padding: 7px 25px;
     font-size: 28px;
     color: #fff;
     border-color: #000;
     background-color: #000;
     font-family: 'Staatliches';
     cursor: pointer;
+    border: 0;
+	box-shadow: none;
+	text-align: center;
 }
 
 .book-container {
-	width: 450px;
-	height: 600px;
-	margin: 0 auto;
+	width: 400px;
+	height: 500px;
+	margin: 50px auto;
 }
 
 .flip-card {
@@ -89,12 +94,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+	width: 100%;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #D8D8D8;
 	padding: 10px;
+	position:fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .donate-text {
@@ -109,13 +118,21 @@ h1, h2, h3, h4, h5, h6 {
 	width: 200px;
 }
 
-@media only screen and (max-width: 925px) {
-	.description {
-		display: none;
-	}
+.hidden {
+	display: none;
+}
 
+@media only screen and (max-width: 555px) {
 	.body-grid-container {
 		display: grid;
-		grid-template-rows: 35% 58%;
+	}
+
+	.description {
+		width: 300px;
+		font-size: 30px;
+	}
+
+	.fa-arrow-right {
+		font-size: 32px !important;
 	}
 }
