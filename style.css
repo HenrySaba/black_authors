@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blm-logo-img {
-	width: 200px;
+	width: 30vw;
 	margin-left: 5px;
 }
 
@@ -130,7 +130,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.book-container {
-		margin: 20px auto 0 auto;
+		width: 70vw;
+		height: 55vh;
+		margin: 4vh auto 0 auto;
 	}
 
 	.description {
@@ -140,5 +142,13 @@ h1, h2, h3, h4, h5, h6 {
 
 	.fa-arrow-right {
 		font-size: 32px !important;
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	.book-container {
+		width: 60vw;
+		height: 45vh;
+		margin: 4vh auto 0 auto;
 	}
 }
