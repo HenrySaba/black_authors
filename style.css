@@ -62,24 +62,14 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+#new-book-btn:focus {
+	outline: none;
+}
+
 .book-container {
 	width: 400px;
-	height: 550px;
+	height: 100%;
 	margin: 40px auto 0 auto;
-}
-
-.flip-card {
-	height: 100%;
-}
-
-.flip-card-front, .flip-card-back {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	backface-visibility: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .book-img {
@@ -150,14 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-@media only screen and (max-height: 700px) {
-	.book-container {
-		width: 60vw;
-		height: 45vh;
-		margin: 4vh auto 0 auto;
-	}
-
-	.header {
-		font-size: 40px;
+@media only screen and (max-height: 850px) {
+	.link-container {
+		margin-bottom: 20%;
 	}
 }
